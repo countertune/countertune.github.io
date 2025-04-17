@@ -30,13 +30,13 @@
             padding: 0 0px;
             box-sizing: border-box;
         }
-        .header-left {
-            /* Items will align left by default */
+        .header-left
+        {
             display: flex;
             align-items: center;
         }
-        .header-right {
-            /* Items will align right because of space-between on parent */
+        .header-right
+        {
             display: flex;
             align-items: center;
         }
@@ -58,6 +58,44 @@
         {
             background-image: url('download-button-down.png');
         }
+        .slide
+        {
+            margin:0px;
+            padding:0px;
+        }
+        .slide-media
+        {
+            width:1000px;
+            height:400px;
+        }
+        .slide-title
+        {
+            width:1000px;
+            height:70px;
+            background-color: green;
+            background-repeat: no-repeat;
+            background-position: left;
+/*            background-color: transparent;*/
+            border: none;
+            padding: 0;
+        }
+        .slide-blurb
+        {
+            width:1000px;
+            height:30px;
+            background-color: brown;
+            background-repeat: no-repeat;
+            background-position: left;
+/*            background-color: transparent;*/
+            border: none;
+            padding: 0;
+        }
+        .slide-spacer
+        {
+            width:1000px;
+            height:80px;
+            background-color: aquamarine;
+        }
     </style>
     <body>
         <div class="main">
@@ -69,12 +107,17 @@
                     <button class="download-button"></button>
                 </div>
             </div>
-            <video width="1000" height="400" controls autoplay muted loop>
-                <source src="20250416.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <br/>
-            <button>test</button>
+            <div class="slide">
+                <div class="slide-media">
+                    <video width="1000" height="400" controls autoplay muted loop>
+                        <source src="20250416.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="slide-title" style="background-image: url('slide-1-title.png');"></div>
+                <div class="slide-blurb" style="background-image: url('slide-1-blurb.png');"></div>
+                <div class="slide-spacer"></div>
+            </div>
         </div>
     </body>
 </html>
