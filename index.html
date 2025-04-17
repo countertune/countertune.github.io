@@ -16,14 +16,13 @@
         .main
         {
             width:1000px;
-            height:1000px;
-            background-color: blueviolet;
+/*            background-color: blueviolet;*/
         }
         .header
         {
             width: 1000px;
             height: 80px;
-            background-color: black;
+/*            background-color: black;*/
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -34,6 +33,12 @@
         {
             display: flex;
             align-items: center;
+            width: 306px;
+            height: 80px;
+            background-repeat: no-repeat;
+            background-position: left;
+            border: none;
+            padding: 0;
         }
         .header-right
         {
@@ -67,15 +72,19 @@
         {
             width:1000px;
             height:400px;
+/*            background-color: green;*/
+            background-repeat: no-repeat;
+            background-position: left;
+            border: none;
+            padding: 0;
         }
         .slide-title
         {
             width:1000px;
             height:70px;
-            background-color: green;
+/*            background-color: green;*/
             background-repeat: no-repeat;
             background-position: left;
-/*            background-color: transparent;*/
             border: none;
             padding: 0;
         }
@@ -83,10 +92,19 @@
         {
             width:1000px;
             height:30px;
-            background-color: brown;
+/*            background-color: brown;*/
             background-repeat: no-repeat;
             background-position: left;
-/*            background-color: transparent;*/
+            border: none;
+            padding: 0;
+        }
+        .slide-table
+        {
+            width:1000px;
+            height:360px;
+/*            background-color: brown;*/
+            background-repeat: no-repeat;
+            background-position: left;
             border: none;
             padding: 0;
         }
@@ -94,14 +112,14 @@
         {
             width:1000px;
             height:80px;
-            background-color: aquamarine;
+/*            background-color: aquamarine;*/
         }
     </style>
     <body>
         <div class="main">
             <div class="header">
-                <div class="header-left">
-                    <img src="logo.png"/>
+                <div class="header-left" style="background-image: url('logo.png');">
+                    
                 </div>
                 <div class="header-right">
                     <button class="download-button"></button>
@@ -109,13 +127,44 @@
             </div>
             <div class="slide">
                 <div class="slide-media">
-                    <video width="1000" height="400" controls autoplay muted loop>
+                    <video width="1000" height="400" autoplay muted loop>
                         <source src="20250416.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                 </div>
                 <div class="slide-title" style="background-image: url('slide-1-title.png');"></div>
                 <div class="slide-blurb" style="background-image: url('slide-1-blurb.png');"></div>
+                <div class="slide-spacer"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-media" style="background-image: url('slide-5-image-rough.png');"></div>
+                <div class="slide-title" style="background-image: url('slide-2-title.png');"></div>
+                <div class="slide-blurb" style="background-image: url('slide-2-blurb.png');"></div>
+                <div class="slide-spacer"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-media" style="background-image: url('slide-3-image.png');"></div>
+                <div class="slide-title" style="background-image: url('slide-3-title.png');"></div>
+                <div class="slide-blurb" style="background-image: url('slide-3-blurb.png');"></div>
+                <div class="slide-spacer"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-media">
+                    <video width="1000" height="400" autoplay muted loop>
+                        <source src="20250417.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="slide-title" style="background-image: url('slide-4-title.png');"></div>
+                <div class="slide-blurb" style="background-image: url('slide-4-blurb.png');"></div>
+                <div class="slide-spacer"></div>
+            </div>
+            <div class="slide">
+                <div class="slide-media" style="background-image: url('slide-5-image-rough.png');"></div>
+                <div class="slide-title" style="background-image: url('slide-5-title.png');"></div>
+                <div class="slide-table" style="background-image: url('slide-5-table-rough.png');"></div>
+                <div class="slide-spacer"></div>
+                <div class="slide-spacer"></div>
                 <div class="slide-spacer"></div>
             </div>
         </div>
