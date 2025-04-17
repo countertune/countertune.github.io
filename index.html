@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CounterTune</title>
+    </head>
+    <style>
+        body
+        {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .main
+        {
+            width:1000px;
+            height:1000px;
+            background-color: blueviolet;
+        }
+        .header
+        {
+            width: 1000px;
+            height: 80px;
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0px;
+            box-sizing: border-box;
+        }
+        .header-left {
+            /* Items will align left by default */
+            display: flex;
+            align-items: center;
+        }
+        .header-right {
+            /* Items will align right because of space-between on parent */
+            display: flex;
+            align-items: center;
+        }
+        .download-button
+        {
+            width: 135px;
+            height: 45px;
+            cursor: pointer;
+            background-image: url('download-button-up.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            outline: none;
+        }
+        .download-button:active
+        {
+            background-image: url('download-button-down.png');
+        }
+    </style>
+    <body>
+        <div class="main">
+            <div class="header">
+                <div class="header-left">
+                    <img src="logo.png"/>
+                </div>
+                <div class="header-right">
+                    <button class="download-button"></button>
+                </div>
+            </div>
+            <video width="1000" height="400" controls autoplay muted loop>
+                <source src="20250416.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <br/>
+            <button>test</button>
+        </div>
+    </body>
+</html>
